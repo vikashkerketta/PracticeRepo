@@ -1,11 +1,5 @@
 
 import java.io.*;
-//import java.io.BufferedReader;
-//import java.io.BufferedWriter;
-//import java.io.File;
-//import java.io.FileReader;
-//import java.io.FileWriter;
-//import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -18,12 +12,8 @@ class Solution {
 	 Solution() {
 		
 	}
-	int example=3;
-//	Solution(int r){
-//		example= r;
-//		System.out.println("You have got a solution object example: "+example);
-//	}
 
+//. given a number1 and sum=number1+number2, function to find the number2 in a list.
     public void twoSum(int[] nums, int target) {
         int Arr_len= nums.length;
         HashMap<Integer,Integer> Arr_Store = new HashMap<Integer,Integer>();
@@ -44,7 +34,7 @@ class Solution {
     public int twoSum(int[] a, int b, int c) {
     	return b+c;
     }
-	
+//	Given two lists/arrays, find the intersection of two lists.
     public int[] intersect(int[] nums1, int[] nums2) {
     	HashMap<Integer,Integer> numbers = new HashMap<Integer,Integer>();
     	for (int n : nums1) { numbers.put(n,numbers.getOrDefault(n, 0)+1); }
@@ -59,52 +49,15 @@ class Solution {
     	return Arrays.copyOfRange(res,0,cursor);
     	}
     
-/*
- * list<integer>={2,4,7,7,9};
- * list<integer> ={3,4,7};
- * o/p should be 4,7
- * for(int i:B){
- *   if i in A:
- *     C.add(i);
- *     A.remove(i); 2,7,9
- * 
- */
-     
-     
-
-     
-   /*public static TreeMap<String, Integer> sortMapByValue(HashMap<String, Integer> map){
-    		//Comparator<String> comparator = new ValueComparator(map);
-    		//TreeMap is a map sorted by its keys. 
-    		//The comparator is used to sort the TreeMap by keys. 
-    		//TreeMap<String, Integer> result = new TreeMap<String, Integer>(comparator);
-    		//result.putAll(map);
-   }*/
-    		//return result;
-    
     
     
     
     public static void main(String[] args) throws Exception {
-   //Solution newSol= new Solution();
+//. Solution newSol= new Solution();
     	Integer i = new Integer(20);
         int x = i;
         System.out.println("the value of i is:"+x);
         
-   /*HashMap<String, Integer> map = new HashMap<String, Integer>();
-	map.put("a", 10);
-	map.put("b", 30);
-	map.put("c", 50);
-	map.put("d", 40);
-	map.put("e", 20);
-	System.out.println(map);
-
-	TreeMap<String, Integer> sortedMap = sortMapByValue(map);  
-	System.out.println(sortedMap);*/
-   //System.out.println("new string is : "+newStr);
-   
-   //int[] A= {2,4,6,1,7} , sum = 8;
-  // System.out.println("The pairs are: "+ newSol.twoSum1(A, sum));
 	
 	}
 }
