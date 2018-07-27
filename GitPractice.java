@@ -1,7 +1,6 @@
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
 import java.util.Comparator;
@@ -53,7 +52,7 @@ class Solution {
     
     
     public static void main(String[] args) throws Exception {
-//. Solution newSol= new Solution();
+// Solution newSol= new Solution();
     	Integer i = new Integer(20);
         int x = i;
         System.out.println("the value of i is:"+x);
